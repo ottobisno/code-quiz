@@ -18,4 +18,4 @@ I would like to update the quiz to have the stored scores at the end of the quiz
 
 ## Preview
 
-![A preview of the app](https://github.com/ottobisno/code-quiz/blob/main/assets/images/app-preview.JPG?raw=true)
+![A preview of the app](https://github.com/ottobisno/code-quiz/blob/main/app-preview.JPG?raw=true)
