@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <h3 id="timer">Time: <span id="time">N/A</span></h3>
+    <div id="container">
+        <div class="section" id="introduction" data-state="shown">
+            <h1 class="title">Coding Quiz Challenge</h1>
+            <p class="normal-text">You will be given 1 minute to complete the quiz, so try to answer the questions as quickly as possible. Each question answered correctly is worth 5 points. For each question answered incorrectly, 20 seconds will be deducted from your overall time. Good luck!</p>
+            <button class="button non-ans-button" id="start-button">Start Quiz</button>
+        </div>
+        <div class="section" id="question-1" data-state="hidden">
+            <h2 class="question-text">Which of these is not a primitive data type in JavaScript?</h2>
+            <div class="buttons">
+                <button class="button" id="q1-correct">1. Tyrannosaurus Rex</button>
+                <button class="button q1-wrong">2. Number</button>
+                <button class="button q1-wrong">3. String</button>
+                <button class="button q1-wrong">4. Boolean</button>
+            </div>
+        </div>
+        <div class="section" id="question-2" data-state="hidden">
+            <h2 class="question-text">Which of the following will write the message “Hello!” in an alert box?</h2>
+            <div class="buttons">
+                <button class="button q2-wrong">1. msgAlert(“Hello!”);</button>
+                <button class="button q2-wrong">2. alert(Hello!);</button>
+                <button class="button" id="q2-correct">3. alert(“Hello!”);</button>
+                <button class="button q2-wrong">4. alertBox(“Hello!”);</button>
+            </div>
+            <h3 class="answer-alert"></h3>
+        </div>
+        <div class="section" id="question-3" data-state="hidden">
+            <h2 class="question-text">Which company developed JavaScript?</h2>
+            <div class="buttons">
+                <button class="button q3-wrong">1. Amazon</button>
+                <button class="button q3-wrong">2. Big Foot Java</button>
+                <button class="button q3-wrong">3. Apple</button>
+                <button class="button" id="q3-correct">4. Netscape</button>
+            </div>
+            <h3 class="answer-alert"></h3>
+        </div>
+        <div class="section" id="question-4" data-state="hidden">
+            <h2 class="question-text">Which of the following is an operator in JavaScript?</h2>
+            <div class="buttons">
+                <button class="button" id="q4-correct">1. %</button>
+                <button class="button q4-wrong">2. @</button>
+                <button class="button q4-wrong">3. )</button>
+                <button class="button q4-wrong">4. 1</button>
+            </div>
+            <h3 class="answer-alert"></h3>
+        </div>
+        <div class="section" id="results" data-state="hidden">
+            <h1 class="title" id="results-title"></h1>
+            <p class="normal-text">Your final score is: <span id="score"></span></p>
+            <div id="initials-div">
+                <p class="normal-text">Enter initials: </p>
+                <input type="text" id="initials-input" name="initials-input" maxlength="2" placeholder="e.g. OB">
+                <button class="button non-ans-button" id="submit-button">Submit</button>
+            </div>
+            <h3 class="answer-alert"></h3>
+        </div>
+        <div class="section" id="leaderboard" data-state="hidden">
+            <h1 class="title">High Scores:</h1>
+            <ul class="normal-text" id="high-scores"></ul>
+
+            <div class="buttons">
+                <button class="button non-ans-button" id="try-again-button">Try Again</button>
+                <button class="button non-ans-button" id="clear-button">Clear High Scores</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

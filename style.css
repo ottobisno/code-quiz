@@ -1,0 +1,124 @@
+/* Getting rid of any unwanted default margins and padding */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#timer {
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+    font-size: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#container {
+    width: 40%;
+    min-height: 300px;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+.section {
+    text-align: center;
+    min-height: 300px;
+    padding: 20px;
+}
+
+#introduction {
+    display: block;
+}
+
+#question-1 {
+    display: none; 
+}
+
+#question-2 {
+    display: none;
+}
+
+#question-3 {
+    display: none;
+}
+
+#question-4 {
+    display: none;
+}
+
+#time-out {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+#leaderboard {
+    display: none;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.normal-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.buttons {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin: 5px;
+    padding: 4px;
+    width: 175px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(172, 114, 226);
+}
+
+.button:active {
+    background-color: rgb(63, 21, 101);
+    border-color:rgb(34, 34, 34);
+}
+
+.answer-alert {
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(77, 77, 77)
+}
+
+.non-ans-button {
+    width: fit-content;
+}
+
+#score {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#initials-div > p {
+    display: inline;
+}
+
+#high-scores {
+    list-style: none;
+    font-weight: bolder;
+}
