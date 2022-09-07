@@ -24,7 +24,7 @@ var q4ButtonCorrect = document.querySelector('#q4-correct');
 var q4ButtonWrong = document.querySelectorAll('.q4-wrong');
 var resultsTitle = document.querySelector('#results-title');
 var tryAgainButton = document.querySelector('#try-again-button');
-var clearHighScoresButton = document.querySelector('#clear-button');
+var clearPreviousScoresButton = document.querySelector('#clear-button');
 var submitButton = document.querySelector('#submit-button');
 var initialsInput = document.querySelector('#initials-input');
 
@@ -274,8 +274,8 @@ tryAgainButton.addEventListener('click', function() {
     displayCheck();
 })
 
-//  Clears all high scores once the "Clear High Scores" button is clicked
-clearHighScoresButton.addEventListener('click', function() {
+//  Clears all high scores once the "Clear Previous Scores" button is clicked
+clearPreviousScoresButton.addEventListener('click', function() {
     highScores.storedInitials = [];
     highScores.storedScores = [];
     storeHighScores();
